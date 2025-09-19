@@ -1,0 +1,24 @@
+name: "Download from orphan branch"
+description: "Download files from an orphan branch."
+author: "Daiji256"
+branding:
+  icon: "download"
+  color: "gray-dark"
+
+inputs:
+  branch:
+    description: "Branch name to download from."
+    required: true
+  path:
+    description: "Destination path. Defaults to $GITHUB_WORKSPACE."
+    required: false
+    default: ${{ github.workspace }}
+
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      env:
+        BRANCH: ${{ inputs.branch }}
+        DOWNLOAD_PATH: ${{ inputs.path }}
+      run: bash ${{ github.action_path }}/main.sh
