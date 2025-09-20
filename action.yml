@@ -12,7 +12,6 @@ inputs:
   path:
     description: "Destination path. Defaults to $GITHUB_WORKSPACE."
     required: false
-    default: ${{ github.workspace }}
 
 runs:
   using: "composite"
