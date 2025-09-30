@@ -2,7 +2,7 @@
 
 During a GitHub Actions workflow, this action downloads files from a specific branch (including orphan branches) into a directory.
 
-A companion upload action is available at [daiji256/upload-to-orphan-branch](https://github.com/Daiji256/upload-to-orphan-branch). End-to-end usage examples are provided in [orphan-branch-upload-download-delete-examples](https://github.com/Daiji256/orphan-branch-upload-download-delete-examples).
+Companion actions are available: upload at [daiji256/upload-to-orphan-branch](https://github.com/Daiji256/upload-to-orphan-branch) and delete at [daiji256/delete-orphan-branch](https://github.com/Daiji256/delete-orphan-branch). End-to-end usage examples are provided in [orphan-branch-upload-download-delete-examples](https://github.com/Daiji256/orphan-branch-upload-download-delete-examples).
 
 ## How it works
 
