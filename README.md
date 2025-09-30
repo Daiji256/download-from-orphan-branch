@@ -28,9 +28,14 @@ A companion upload action is available at [daiji256/upload-to-orphan-branch](htt
 jobs:
   download:
     runs-on: ubuntu-latest
-    needs: upload
+    permissions:
+      contents: read
+
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
       - uses: daiji256/download-from-orphan-branch@v0.1.1
         with:
           branch: artifacts-branch-name
