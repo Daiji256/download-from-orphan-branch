@@ -36,7 +36,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: daiji256/download-from-orphan-branch@v0.1.1
+      - uses: daiji256/download-from-orphan-branch@v1
         with:
           branch: outputs-branch-name
           path: dir
