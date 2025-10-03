@@ -38,7 +38,7 @@ jobs:
 
       - uses: daiji256/download-from-orphan-branch@v0.1.1
         with:
-          branch: artifacts-branch-name
+          branch: outputs-branch-name
           path: dir
 ```
 
